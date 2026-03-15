@@ -4,7 +4,7 @@ import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
 // import the router from your routes file
-
+import { eventsRouter, locationsRouter } from './routes/eventsAndLocations.js'
 
 dotenv.config()
 
@@ -22,8 +22,14 @@ else if (process.env.NODE_ENV === 'production') {
     app.use(express.static('public'))
 }
 
-// specify the api path for the server to use
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'Concert Finder API is running! 🎸' })
+})
 
+// specify the api path for the server to use
+// use the router in the server
+app.use('/api/events', eventsRouter)
+app.use('/api/locations', locationsRouter)
 
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>

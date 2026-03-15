@@ -6,32 +6,41 @@
 }
 
 .location-events header {
-    background-color: var(--main-color);
+    background-color: rgba(20, 20, 25, 0.7);
+    backdrop-filter: blur(10px);
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 10px;
+    grid-template-columns: auto 1fr;
+    column-gap: 30px;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .location-image img {
     width: 300px;
     height: auto;
-    border: 1px solid white;
-    margin-left: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .location-events header p {
-    color: white;
-    font-size: 0.8em;
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
     margin-bottom: 0px;
 }
 
 .location-events main {
     text-align: center;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .location-events main i {
