@@ -14,9 +14,9 @@ The following **required** functionality is completed:
 
 - [✔] **The web app uses React to display data from the API**
 - [✔] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - []  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+  - [✔]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
     
-  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
+  - [✔]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [✔] **The web app displays a title.**
 - [✔] **Website includes a visual interface that allows users to select a location they would like to view.**
   - [✔] *Note: A non-visual list of links to different locations is insufficient.* 
